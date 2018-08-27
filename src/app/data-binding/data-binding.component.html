@@ -1,0 +1,7 @@
+<div class="col-md-12">
+    <h3>Username</h3>
+    <input type="text" [(ngModel)]="userName" (input)="displayName()"><br>
+    <p class="col-md-12">{{name}}</p>
+    <button [disabled]="!userName" class="btn btn-primary" (click)="emptyString()">Empty String</button>
+</div>
+
