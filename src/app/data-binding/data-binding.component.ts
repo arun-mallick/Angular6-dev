@@ -15,4 +15,5 @@ export class DataBindingComponent {
         this.userName = "";
         this.name = "";
     }
+    
 }

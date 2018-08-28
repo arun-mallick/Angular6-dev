@@ -1,0 +1,9 @@
+<div class="col-md-12">
+    <button class="btn btn-primary" (click)="toggle()">Display Details</button>
+</div>
+<p *ngIf="display" class="col-md-12">Secret Paragraph - true</p>
+<div>
+    <ul *ngFor="let data of arr; let i = index">
+        <li [ngClass]="{'text-color':i >= 4}" [ngStyle]="{'background-color':i >= 4 ? 'blue' : '','width':'500px','list-style':'none'}">Button click no {{i+1}} -- {{data}}</li>
+    </ul>
+</div>
